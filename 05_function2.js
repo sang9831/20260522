@@ -21,3 +21,23 @@ a(); // 선언 전
 function a() {
   console.log("호이스팅");
 }
+
+// 화살표 함수 (유사 lambda)
+// 하스켈, 리스프 - (스칼라...) - 클로져 - ocaml
+(function () {});
+// (입력) -> (출력)
+
+const af = () => 0;
+af();
+console.log(af());
+
+const af2 = (a) => console.log(`실행 결과 : ${a}`);
+console.log(af2(1));
+
+const af3 = (a) => {
+  a++;
+  a *= 2;
+  return a;
+};
+
+console.log(af3(100));
